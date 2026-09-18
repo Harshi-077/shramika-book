@@ -33,6 +33,48 @@ const te: Record<TranslationKeys, string> = {
   login_error: 'ఇమెయిల్ లేదా పాస్‌వర్డ్ తప్పు',
   login_subtitle: 'మీ కూలీలను నిర్వహించడానికి లాగిన్ చేయండి',
 
+  login_createAccount: 'ఖాతా సృష్టించండి',
+  login_welcomeBack: 'తిరిగి స్వాగతం',
+  login_createSubtitle:
+    'మీ మేనేజర్ ఖాతాను సృష్టించి ప్రారంభించండి',
+  login_loginSubtitle:
+    'మీ కూలీల రికార్డులను నిర్వహించడానికి లాగిన్ చేయండి',
+  login_confirmPassword: 'పాస్‌వర్డ్‌ను నిర్ధారించండి',
+  login_rememberMe: 'నన్ను గుర్తుంచుకోండి',
+  login_forgotPassword: 'పాస్‌వర్డ్ మర్చిపోయారా?',
+  login_pleaseWait: 'దయచేసి వేచి ఉండండి...',
+  login_or: 'లేదా',
+  login_backToLogin: 'లాగిన్‌కు తిరిగి వెళ్లండి',
+  login_loginHere: 'ఇక్కడ లాగిన్ చేయండి',
+  login_newToApp: 'Shramika Bookకి కొత్తవారా?',
+  login_createYourAccount: 'మీ ఖాతాను సృష్టించండి',
+  login_alreadyHaveAccount:
+    'ఇప్పటికే Shramika Book ఖాతా ఉందా?',
+  login_passwordMismatch: 'పాస్‌వర్డ్‌లు సరిపోలడం లేదు.',
+  login_passwordMinLength:
+    'పాస్‌వర్డ్ కనీసం 6 అక్షరాలు ఉండాలి.',
+  login_accountCreated:
+    'ఖాతా విజయవంతంగా సృష్టించబడింది! లాగిన్ చేయడానికి ముందు మీ ఇమెయిల్‌ను నిర్ధారించండి.',
+  login_passwordResetNext:
+    'పాస్‌వర్డ్ రీసెట్‌ను తదుపరి జోడించవచ్చు.',
+  login_emailPlaceholder: 'మీ ఇమెయిల్‌ను నమోదు చేయండి',
+  login_passwordPlaceholder: 'మీ పాస్‌వర్డ్‌ను నమోదు చేయండి',
+  login_confirmPasswordPlaceholder:
+    'మీ పాస్‌వర్డ్‌ను నిర్ధారించండి',
+
+  // Login page
+  login_brandSubtitle: 'కూలీల నిర్వహణ యాప్',
+  login_heroTitle: 'మెరుగైన రికార్డులు',
+  login_heroTitleSecond: 'మెరుగైన',
+  login_heroTitleHighlight: 'భవిష్యత్తు కోసం',
+  login_heroDescription:
+    'మీ కూలీలు, హాజరు, వేతనాలు మరియు చెల్లింపులను ఒకే చోట నిర్వహించండి.',
+
+  login_featureLabourers: 'కూలీలు',
+  login_featureAttendance: 'హాజరు',
+  login_featureWagesPayments: 'వేతనాలు & చెల్లింపులు',
+  login_featureFieldOwners: 'పొలం యజమానులు',
+
   // Dashboard
   dashboard_title: 'డాష్‌బోర్డ్',
   dashboard_totalLabourers: 'మొత్తం కూలీలు',
@@ -48,7 +90,8 @@ const te: Record<TranslationKeys, string> = {
 
   // Labourers
   labourers_title: 'కూలీలు',
-  labourers_searchPlaceholder: 'పేరు లేదా ఫోన్ నంబర్ ద్వారా వెతకండి',
+  labourers_searchPlaceholder:
+    'పేరు లేదా ఫోన్ నంబర్ ద్వారా వెతకండి',
   labourers_addTitle: 'కూలీని జోడించండి',
   labourers_editTitle: 'కూలీని సవరించండి',
   labourers_name: 'పేరు',
@@ -61,7 +104,8 @@ const te: Record<TranslationKeys, string> = {
   labourers_totalWage: 'మొత్తం వేతనం',
   labourers_paid: 'చెల్లించినది',
   labourers_pending: 'బాకీ',
-  labourers_empty: 'ఇంకా కూలీలు జోడించలేదు. ప్రారంభించడానికి "కూలీని జోడించండి" నొక్కండి.',
+  labourers_empty:
+    'ఇంకా కూలీలు జోడించలేదు. ప్రారంభించడానికి "కూలీని జోడించండి" నొక్కండి.',
   labourers_details: 'కూలీ వివరాలు',
 
   // Attendance
@@ -69,11 +113,13 @@ const te: Record<TranslationKeys, string> = {
   attendance_addTitle: 'హాజరు నమోదు చేయండి',
   attendance_date: 'తేదీ',
   attendance_selectLabourers: 'కూలీలను ఎంచుకోండి',
-  attendance_noLabourers: 'హాజరు నమోదు చేయడానికి ముందు కూలీలను జోడించండి.',
+  attendance_noLabourers:
+    'హాజరు నమోదు చేయడానికి ముందు కూలీలను జోడించండి.',
   attendance_empty: 'ఇంకా హాజరు నమోదు కాలేదు.',
   attendance_present: 'హాజరు',
   attendance_selectAll: 'అందరినీ ఎంచుకోండి',
-  attendance_alreadyExists: 'ఈ తేదీకి హాజరు ఇప్పటికే ఉంది. ఇది నవీకరించబడుతుంది.',
+  attendance_alreadyExists:
+    'ఈ తేదీకి హాజరు ఇప్పటికే ఉంది. ఇది నవీకరించబడుతుంది.',
 
   // Payments
   payments_title: 'చెల్లింపులు',
@@ -86,7 +132,8 @@ const te: Record<TranslationKeys, string> = {
   payments_pending: 'బాకీ',
   payments_history: 'చెల్లింపు చరిత్ర',
   payments_deleteTitle: 'చెల్లింపును తొలగించండి',
-  payments_deleteMessage: 'మీరు ఖచ్చితంగా ఈ చెల్లింపు రికార్డును తొలగించాలనుకుంటున్నారా? దీన్ని వెనక్కి తీసుకోలేరు.',
+  payments_deleteMessage:
+    'మీరు ఖచ్చితంగా ఈ చెల్లింపు రికార్డును తొలగించాలనుకుంటున్నారా? దీన్ని వెనక్కి తీసుకోలేరు.',
 
   // Field Owners
   fieldOwners_title: 'పొలం యజమానులు',

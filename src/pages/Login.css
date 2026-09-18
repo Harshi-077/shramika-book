@@ -1,0 +1,919 @@
+/* =========================================
+   SHRMIKA BOOK LOGIN
+========================================= */
+
+.shramika-login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 56% 44%;
+  background: #f8f7ef;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.login-left {
+  min-height: 100vh;
+  background: #f8f7ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 55px;
+  box-sizing: border-box;
+}
+
+.left-content {
+  width: 100%;
+  max-width: 760px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.brand-mark {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  background: #16834e;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 12px 25px rgba(22, 131, 78, 0.15);
+}
+
+.brand-text h1 {
+  margin: 0;
+  color: #145b3c;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.brand-text p {
+  margin: 6px 0 0;
+  color: #4d705f;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-text {
+  margin-top: 55px;
+}
+
+.hero-text h2 {
+  margin: 0;
+
+  color: #145b3c;
+
+  font-size: clamp(42px, 4.2vw, 64px);
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+.hero-text h2 span {
+  color: #31994f;
+}
+
+.hero-text p {
+  max-width: 620px;
+
+  margin: 25px 0 0;
+
+  color: #456957;
+
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   FARMER IMAGE
+========================================= */
+
+.farmer-image-container {
+  width: 100%;
+
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.farmer-image {
+  width: 100%;
+  max-width: 760px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  /* Keeps the transparent illustration clean */
+  background: transparent;
+}
+
+
+/* =========================================
+   FEATURE BAR
+========================================= */
+
+.feature-bar {
+  width: 82%;
+  max-width: 650px;
+
+  margin: -5px auto 0;
+
+  padding: 12px 20px;
+
+  background: #eef1d9;
+
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 2;
+}
+
+.feature-box {
+  min-width: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  color: #147447;
+
+  text-align: center;
+}
+
+.feature-box svg {
+  stroke-width: 2;
+}
+
+.feature-box span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 42px;
+
+  background: rgba(20, 116, 71, 0.18);
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.login-right {
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 70px 45px 40px;
+
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+
+/* =========================================
+   LANGUAGE SWITCHER
+========================================= */
+
+.language-switcher {
+  position: absolute;
+
+  top: 28px;
+  right: 35px;
+
+  display: flex;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  background: #eef1dc;
+
+  border: 1px solid #d8dece;
+
+  z-index: 10;
+}
+
+.language-switcher button {
+  border: none;
+
+  min-width: 105px;
+
+  padding: 12px 20px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.language-active {
+  background: #16834e;
+  color: #ffffff;
+}
+
+.language-inactive {
+  background: transparent;
+  color: #245d47;
+}
+
+.language-inactive:hover {
+  background: #e4ead4;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+  width: 100%;
+  max-width: 520px;
+
+  padding: 38px 42px 32px;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CARD LOGO
+========================================= */
+
+.card-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.card-logo-icon {
+  width: 68px;
+  height: 68px;
+
+  border-radius: 18px;
+
+  background: #16834e;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 10px 24px rgba(22, 131, 78, 0.15);
+}
+
+.card-brand-name {
+  margin: 15px 0 0;
+
+  text-align: center;
+
+  color: #145b3c;
+
+  font-size: 28px;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   LOGIN TITLE
+========================================= */
+
+.login-title {
+  text-align: center;
+
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+
+.login-title h3 {
+  margin: 0;
+
+  color: #145b3c;
+
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.login-title p {
+  max-width: 410px;
+
+  margin: 10px auto 0;
+
+  color: #61766b;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.shramika-form {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 19px;
+}
+
+.input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #245d47;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.input-box {
+  min-height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 16px;
+
+  border: 1px solid #d7dfd7;
+
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  transition: 0.2s ease;
+}
+
+.input-box:focus-within {
+  border-color: #16834e;
+
+  box-shadow:
+    0 0 0 3px rgba(22, 131, 78, 0.08);
+}
+
+.input-box > svg {
+  flex-shrink: 0;
+
+  color: #16834e;
+}
+
+.input-content {
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input-content span {
+  color: #668074;
+
+  font-size: 12px;
+
+  line-height: 1.1;
+
+  margin-bottom: 3px;
+}
+
+.input-content input {
+  width: 100%;
+
+  padding: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #1b3d2d;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+.input-content input::placeholder {
+  color: #9aa9a1;
+}
+
+.eye-button {
+  flex-shrink: 0;
+
+  border: none;
+
+  background: transparent;
+
+  padding: 4px;
+
+  color: #65776e;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-button:hover {
+  color: #16834e;
+}
+
+
+/* =========================================
+   REMEMBER / FORGOT
+========================================= */
+
+.login-options {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin: 2px 0 22px;
+}
+
+.remember-option {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #456658;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.remember-box {
+  width: 21px;
+  height: 21px;
+
+  border-radius: 6px;
+
+  border: 1px solid #bdcabe;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.remember-box.checked {
+  background: #16834e;
+
+  border-color: #16834e;
+}
+
+.forgot-button {
+  border: none;
+
+  background: transparent;
+
+  color: #147447;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.login-message {
+  padding: 12px 14px;
+
+  margin-bottom: 17px;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+
+  line-height: 1.45;
+}
+
+.login-message.error {
+  background: #fff1ef;
+
+  color: #b42318;
+
+  border: 1px solid #f1cbc6;
+}
+
+.login-message.success {
+  background: #eff9f2;
+
+  color: #167343;
+
+  border: 1px solid #c8e6d1;
+}
+
+
+/* =========================================
+   MAIN LOGIN BUTTON
+========================================= */
+
+.main-login-button {
+  width: 100%;
+
+  min-height: 60px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background: #16834e;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.main-login-button:hover {
+  background: #126f42;
+
+  transform: translateY(-1px);
+}
+
+.main-login-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================
+   OR DIVIDER
+========================================= */
+
+.or-divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 24px 0;
+}
+
+.or-divider span {
+  flex: 1;
+
+  height: 1px;
+
+  background: #dce3dd;
+}
+
+.or-divider p {
+  margin: 0;
+
+  color: #788880;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   CREATE ACCOUNT BUTTON
+========================================= */
+
+.create-account-button {
+  width: 100%;
+
+  min-height: 57px;
+
+  border: 1px solid #d8dfd2;
+
+  border-radius: 15px;
+
+  background: #f4f6e8;
+
+  color: #147447;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.create-account-button:hover {
+  background: #ebefd9;
+}
+
+
+/* =========================================
+   BOTTOM TEXT
+========================================= */
+
+.bottom-text {
+  margin: 22px 0 0;
+
+  text-align: center;
+
+  color: #738179;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.bottom-text button {
+  border: none;
+
+  background: transparent;
+
+  color: #147447;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .shramika-login-page {
+    grid-template-columns: 52% 48%;
+  }
+
+  .login-left {
+    padding: 40px 30px;
+  }
+
+  .login-right {
+    padding: 70px 25px 35px;
+  }
+
+  .hero-text h2 {
+    font-size: 46px;
+  }
+
+  .feature-bar {
+    width: 100%;
+  }
+
+  .feature-box {
+    min-width: 75px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .shramika-login-page {
+    grid-template-columns: 1fr;
+
+    overflow: visible;
+  }
+
+  .login-left {
+    min-height: auto;
+
+    padding: 40px 22px 25px;
+  }
+
+  .hero-text {
+    margin-top: 40px;
+  }
+
+  .hero-text h2 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .farmer-image-container {
+    margin-top: 25px;
+  }
+
+  .login-right {
+    min-height: auto;
+
+    padding: 75px 20px 40px;
+  }
+
+  .language-switcher {
+    top: 20px;
+    right: 20px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .brand-mark {
+    width: 58px;
+    height: 58px;
+  }
+
+  .brand-mark svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-text h1 {
+    font-size: 25px;
+  }
+
+  .brand-text p {
+    font-size: 12px;
+  }
+
+  .hero-text h2 {
+    font-size: 34px;
+
+    letter-spacing: -0.8px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .feature-bar {
+    border-radius: 24px;
+
+    padding: 8px 5px;
+  }
+
+  .feature-box {
+    min-width: 0;
+
+    flex: 1;
+  }
+
+  .feature-box svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .feature-box span {
+    font-size: 9px;
+  }
+
+  .feature-divider {
+    height: 38px;
+  }
+
+  .login-card {
+    padding: 28px 15px 25px;
+  }
+
+  .card-logo-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-brand-name {
+    font-size: 25px;
+  }
+
+  .login-title h3 {
+    font-size: 27px;
+  }
+
+  .login-title p {
+    font-size: 14px;
+  }
+
+  .language-switcher button {
+    min-width: 85px;
+
+    padding: 10px 14px;
+
+    font-size: 13px;
+  }
+
+}

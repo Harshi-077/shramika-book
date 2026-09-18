@@ -31,6 +31,42 @@ const en = {
   login_error: 'Invalid email or password',
   login_subtitle: 'Login to manage your labourers',
 
+  login_createAccount: 'Create Account',
+  login_welcomeBack: 'Welcome Back',
+  login_createSubtitle: 'Create your manager account and get started',
+  login_loginSubtitle: 'Log in to manage your labour records',
+  login_confirmPassword: 'Confirm Password',
+  login_rememberMe: 'Remember me',
+  login_forgotPassword: 'Forgot password?',
+  login_pleaseWait: 'Please wait...',
+  login_or: 'OR',
+  login_backToLogin: 'Back to Login',
+  login_loginHere: 'Login here',
+  login_newToApp: 'New to Shramika Book?',
+  login_createYourAccount: 'Create your account',
+  login_alreadyHaveAccount: 'Already have a Shramika Book account?',
+  login_passwordMismatch: 'Passwords do not match.',
+  login_passwordMinLength: 'Password must be at least 6 characters.',
+  login_accountCreated:
+    'Account created successfully! Please confirm your email before logging in.',
+  login_passwordResetNext: 'Password reset can be added next.',
+  login_emailPlaceholder: 'Enter your email',
+  login_passwordPlaceholder: 'Enter your password',
+  login_confirmPasswordPlaceholder: 'Confirm your password',
+
+  // Login page
+  login_brandSubtitle: 'Labour Management App',
+  login_heroTitle: 'Better Records',
+  login_heroTitleSecond: 'for a',
+  login_heroTitleHighlight: 'Brighter Tomorrow',
+  login_heroDescription:
+    'Track your labourers, attendance, wages and payments — all in one place.',
+
+  login_featureLabourers: 'Labourers',
+  login_featureAttendance: 'Attendance',
+  login_featureWagesPayments: 'Wages & Payments',
+  login_featureFieldOwners: 'Field Owners',
+
   // Dashboard
   dashboard_title: 'Dashboard',
   dashboard_totalLabourers: 'Total Labourers',
@@ -59,7 +95,8 @@ const en = {
   labourers_totalWage: 'Total Wage',
   labourers_paid: 'Paid',
   labourers_pending: 'Pending',
-  labourers_empty: 'No labourers added yet. Tap "Add Labourer" to get started.',
+  labourers_empty:
+    'No labourers added yet. Tap "Add Labourer" to get started.',
   labourers_details: 'Labourer Details',
 
   // Attendance
@@ -67,11 +104,13 @@ const en = {
   attendance_addTitle: 'Add Attendance',
   attendance_date: 'Date',
   attendance_selectLabourers: 'Select Labourers',
-  attendance_noLabourers: 'Add labourers first before recording attendance.',
+  attendance_noLabourers:
+    'Add labourers first before recording attendance.',
   attendance_empty: 'No attendance recorded yet.',
   attendance_present: 'present',
   attendance_selectAll: 'Select All',
-  attendance_alreadyExists: 'Attendance for this date already exists. It will be updated.',
+  attendance_alreadyExists:
+    'Attendance for this date already exists. It will be updated.',
 
   // Payments
   payments_title: 'Payments',
@@ -84,7 +123,8 @@ const en = {
   payments_pending: 'Pending',
   payments_history: 'Payment History',
   payments_deleteTitle: 'Delete Payment',
-  payments_deleteMessage: 'Are you sure you want to delete this payment record? This cannot be undone.',
+  payments_deleteMessage:
+    'Are you sure you want to delete this payment record? This cannot be undone.',
 
   // Field Owners
   fieldOwners_title: 'Field Owners',
@@ -110,4 +150,5 @@ const en = {
 }
 
 export default en
+
 export type TranslationKeys = keyof typeof en
